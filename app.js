@@ -7,6 +7,8 @@ const PORT = 8000;
 require('dotenv').config();
 
 const Types2Route = require('./routes/Types2Router');
+const Types3Route = require('./routes/Types3Router');
+app.use('Types3', Types3Route);
 app.use('Types2', Types2Route);
 app.use(cors())
 app.use(express.json());
